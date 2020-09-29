@@ -1,0 +1,583 @@
+{
+  "categories": [
+    {
+      "id": "app",
+      "title": "Appetizer",
+      "items": ["000001", "000002", "000003", "000004", "000005", "000006"]
+    },
+    {
+      "id": "pho",
+      "title": "Rice Noodle Beef Soup (Pho)",
+      "items": [
+        "000007",
+        "000008",
+        "000009",
+        "000010",
+        "000011",
+        "000012",
+        "000013",
+        "000014",
+        "000015",
+        "000016",
+        "000017",
+        "000018",
+        "000019"
+      ]
+    },
+    {
+      "id": "spec",
+      "title": "House Special",
+      "items": [
+        "000020",
+        "000021",
+        "000022",
+        "000023",
+        "000024",
+        "000025",
+        "000026"
+      ]
+    },
+    {
+      "id": "rice",
+      "title": "Steam Rice Dishes",
+      "items": [
+        "000027",
+        "000028",
+        "000029",
+        "000030",
+        "000031",
+        "000032",
+        "000033",
+        "000034",
+        "000035",
+        "000036",
+        "000037"
+      ]
+    },
+    {
+      "id": "vermi",
+      "title": "Vermicelli Salad",
+      "items": [
+        "000038",
+        "000039",
+        "000040",
+        "000041",
+        "000042",
+        "000043",
+        "000044"
+      ]
+    },
+    {
+      "id": "kid",
+      "title": "Kid's Menu",
+      "items": [
+        "000045",
+        "000046",
+        "000047",
+        "000048",
+        "000049",
+        "000050",
+        "000051",
+        "000052"
+      ]
+    },
+    {
+      "id": "drink",
+      "title": "Beverages",
+      "items": [
+        "000053",
+        "000054",
+        "000055",
+        "000056",
+        "000057",
+        "000058",
+        "000059",
+        "000060"
+      ]
+    }
+  ],
+  "dish": [
+    {
+      "id": "000001",
+      "order": "1",
+      "name": "Fresh Shrimp Spring Roll (2)",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000002",
+      "order": "2",
+      "name": "Fresh Tofu Spring Roll (2)",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000003",
+      "order": "3",
+      "name": "Grilled Pork Patty Rolls (3)",
+      "price": "$7.80",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000004",
+      "order": "4",
+      "name": "Crispy Vietnamese Egg Rolls(5)",
+      "price": "$7.75",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000005",
+      "order": "5",
+      "name": "Vietnamese Sandwich",
+      "price": "$4.99",
+      "hasChoice": true,
+      "choice": "Choice of beef, pork, or chicken",
+      "ImagePath": null
+    },
+    {
+      "id": "000006",
+      "order": "",
+      "name": "Chicken Wings",
+      "price": "$4.99",
+      "hasChoice": true,
+      "choice": "",
+      "ImagePath": null
+    },
+    {
+      "id": "000007",
+      "order": "6",
+      "name": "Special Combination",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000008",
+      "order": "7",
+      "name": "Rare Steak ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000009",
+      "order": "8",
+      "name": "Rare Steak & Tripe ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000010",
+      "order": "9",
+      "name": "Rare Steak & Tendon ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000011",
+      "order": "10",
+      "name": "Rare Steak & Well done Brisket ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000012",
+      "order": "11",
+      "name": "Rare Steak & Meatballs ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000013",
+      "order": "12",
+      "name": "Rare Steak, Brisket, Tendon, & Tripe ",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000014",
+      "order": "13",
+      "name": "Fresh Chicken Breast Strips ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000015",
+      "order": "14",
+      "name": "Shrimp ",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000016",
+      "order": "15",
+      "name": "Tofu & Broccoli ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000017",
+      "order": "16",
+      "name": "Charbroiled Meat ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000018",
+      "order": "17",
+      "name": "Combo Chabroiled ",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000019",
+      "order": "18",
+      "name": "Plain Noodle",
+      "price": "$8.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000020",
+      "order": "19",
+      "name": "Spicy Lemon Grass Soup",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000021",
+      "order": "20",
+      "name": "Sacha Egg Noodle Soup",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000022",
+      "order": "21",
+      "name": "Mi Quang Noddle",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000023",
+      "order": "22",
+      "name": "Fried Rice",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000024",
+      "order": "23",
+      "name": "Combination Fried Rice",
+      "price": "$12.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000025",
+      "order": "24",
+      "name": "Chow Mein",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000026",
+      "order": "25",
+      "name": "Combination Chow Mein",
+      "price": "$12.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000027",
+      "order": "26",
+      "name": "Charbroiled Meat ",
+      "price": "$8.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000028",
+      "order": "27",
+      "name": "Charbroiled Meat & Shrimp ",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000029",
+      "order": "28",
+      "name": "Charbroiled Meat & Egg Rolls ",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000030",
+      "order": "29",
+      "name": "Combination Platter ",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000031",
+      "order": "30",
+      "name": "Quarter Chicken Leg",
+      "price": "$8.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000032",
+      "order": "31",
+      "name": "Pan Fried Vegetable & Tofu ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000033",
+      "order": "32",
+      "name": "Lemon Grass Chicken Breast with Broccoli ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000034",
+      "order": "33",
+      "name": "Shaken Fillet Mignon Cube ",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000035",
+      "order": "34",
+      "name": "Orange Chicken ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000036",
+      "order": "35",
+      "name": "Kung Pao Chicken ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000037",
+      "order": "36",
+      "name": "Teriyaki Chicken ",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000038",
+      "order": "37",
+      "name": "Charbroiled Meat Salad",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000039",
+      "order": "38",
+      "name": "Crispy Egg Rolls Salad",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000040",
+      "order": "39",
+      "name": "Vegetarian Tofu Salad",
+      "price": "$9.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000041",
+      "order": "40",
+      "name": "Charbroiled Meat & Shrimp Salad",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000042",
+      "order": "41",
+      "name": "Charbroiled Meat & Egg Roll Salad",
+      "price": "$10.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000043",
+      "order": "42",
+      "name": "Charbroiled Meat, Egg Rolls, & Shrimp",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000044",
+      "order": "43",
+      "name": "Combination Charbroiled Meat",
+      "price": "$11.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000045",
+      "order": "44",
+      "name": "Steak Rice Noodle Soup",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000046",
+      "order": "45",
+      "name": "Well Done Brisket Rice Noodle Soup",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000047",
+      "order": "46",
+      "name": "Meat Balls Rice Noodle Soup",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000048",
+      "order": "47",
+      "name": "Chicken Strips Rice Noodle Soup",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000049",
+      "order": "48",
+      "name": "Shrimp Rice Noodle Soup",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000050",
+      "order": "49",
+      "name": "Charbroiled Meat With Steam Rice",
+      "price": "$5.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000051",
+      "order": "50",
+      "name": "Chow Mein",
+      "price": "$6.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000052",
+      "order": "51",
+      "name": "Fried Rice",
+      "price": "$6.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000053",
+      "order": "1",
+      "name": "Fresh Brewed Tea",
+      "price": "$3.50",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000054",
+      "order": "2",
+      "name": "Fusion Tea",
+      "price": "$3.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000055",
+      "order": "3",
+      "name": "Fusion Milk Tea",
+      "price": "$4.50",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000056",
+      "order": "4",
+      "name": "Latte Special",
+      "price": "$4.50",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000057",
+      "order": "5",
+      "name": "Slushy",
+      "price": "$4.50",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000058",
+      "order": "6",
+      "name": "Smoothie",
+      "price": "$4.50",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000059",
+      "order": "7",
+      "name": "Fresh Lemonade",
+      "price": "$3.99",
+      "hasChoice": false,
+      "ImagePath": null
+    },
+    {
+      "id": "000060",
+      "order": "8",
+      "name": "Soda, Bottled Water",
+      "price": "$1.00",
+      "hasChoice": false,
+      "ImagePath": null
+    }
+  ]
+}
