@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/phosupper",
   siteMetadata: {
     title: `Menu Website`,
     description: `Currently prototype for Pho Superbowl menu.`,

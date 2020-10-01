@@ -16,13 +16,21 @@ const CatTitle = styled.h2({
 })
 
 const ItemDiv = styled.div({
-  width: "40%",
   border: "1px solid gray",
+  width: "90%",
   borderRadius: "15px",
   display: "flex",
   flexFlow: "column",
   padding: "1em 1em",
-  margin: "2em 2em",
+  margin: "1em 0",
+  "@media (min-width:426px)": {
+    width: "45%",
+    margin: "2em 0.125em",
+  },
+  "@media (min-width:570px)": {
+    width: "40%",
+    margin: "2em 2em",
+  },
 })
 
 const ItemTitle = styled.h4({

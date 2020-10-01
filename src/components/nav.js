@@ -6,9 +6,13 @@ const NavList = styled.ul({
   listStyle: "none",
   borderBottom: "1px solid gray",
   display: "flex",
-  flexWrap: "wrap",
+  flexFlow: "column nowrap",
+  width: "100%",
   justifyContent: "space-evenly",
   margin: "0.25em 0",
+  "@media (min-width:426px)": {
+    flexFlow: "row nowrap",
+  },
 })
 
 const NavItem = styled.li({
@@ -16,9 +20,11 @@ const NavItem = styled.li({
   flexFlow: "column",
   justifyContent: "center",
   marginBottom: 0,
+  with:"100vw",
   "> .activeLink": {
     paddingBottom: "calc(0.625em - 3px)",
     borderBottom: "3px solid black",
+    with:"auto"
   },
 })
 
