@@ -2,16 +2,41 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Link as ScrollLink } from "react-scroll"
 
+const StyledNav = styled.nav({
+  position: "absolute",
+  bottom: "0px",
+
+  "@media (min-width:426px)": {
+    position: "sticky",
+    top: "0px",
+    background: "#fff",
+    zIndex: "1",
+  },
+})
+
 const NavList = styled.ul({
   listStyle: "none",
   borderBottom: "1px solid gray",
-  display: "flex",
-  flexFlow: "column nowrap",
-  width: "100%",
   justifyContent: "space-evenly",
+  width: "100%",
   margin: "0.25em 0",
+  display: "inline-block",
+  height: "50px",
+  overflow: "hidden",
   "@media (min-width:426px)": {
+    display: "flex",
     flexFlow: "row nowrap",
+    visibility: "visible",
+  },
+})
+
+const MobileNav = styled.li({
+  display: "block",
+  width: "100%",
+  position: "relative",
+  top: "0px",
+  "@media (min-width:426px)": {
+    display: "none",
   },
 })
 
@@ -20,11 +45,11 @@ const NavItem = styled.li({
   flexFlow: "column",
   justifyContent: "center",
   marginBottom: 0,
-  with:"100vw",
+  with: "100vw",
   "> .activeLink": {
     paddingBottom: "calc(0.625em - 3px)",
     borderBottom: "3px solid black",
-    with:"auto"
+    with: "auto",
   },
 })
 
@@ -42,10 +67,11 @@ const StyledLink = styled.a({
 const NavLink = StyledLink.withComponent(ScrollLink)
 
 const NavBar = () => (
-  <nav
-    css={{ position: "sticky", top: "0px", background: "#fff", zIndex: "1" }}
-  >
+  <StyledNav>
     <NavList>
+      <MobileNav>
+        <button> hi </button>
+      </MobileNav>
       <NavItem>
         <NavLink
           activeClass="activeLink"
@@ -124,7 +150,7 @@ const NavBar = () => (
         </NavLink>
       </NavItem>
     </NavList>
-  </nav>
+  </StyledNav>
 )
 
 export default NavBar
