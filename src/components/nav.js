@@ -1,38 +1,36 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { Link as ScrollLink } from "react-scroll"
 
 const StyledNav = styled.nav({
-  position: "absolute",
-  bottom: "0px",
-
-  "@media (min-width:426px)": {
-    position: "sticky",
-    top: "0px",
-    background: "#fff",
-    zIndex: "1",
-  },
+  position: "sticky",
+  top: "0px",
+  background: "#fff",
+  zIndex: "1",
+  display: "flex",
+  flexFlow: "row-reverse nowrap",
 })
 
-const NavList = styled.ul({
+const NavList = styled.ul(props => ({
   listStyle: "none",
   borderBottom: "1px solid gray",
   justifyContent: "space-evenly",
   width: "100%",
   margin: "0.25em 0",
   display: "inline-block",
-  height: "50px",
   overflow: "hidden",
+  height: props.expand ? "calc(43px * 7)" : "43px",
+  transition: "height 800ms",
   "@media (min-width:426px)": {
     display: "flex",
     flexFlow: "row nowrap",
     visibility: "visible",
   },
-})
+}))
 
-const MobileNav = styled.li({
-  display: "block",
-  width: "100%",
+const MobileNav = styled.div({
+  display: "inline-block",
+  width: "20vw",
   position: "relative",
   top: "0px",
   "@media (min-width:426px)": {
@@ -66,91 +64,103 @@ const StyledLink = styled.a({
 
 const NavLink = StyledLink.withComponent(ScrollLink)
 
-const NavBar = () => (
-  <StyledNav>
-    <NavList>
+const NavBar = () => {
+  const [expand, setExpand] = useState(false)
+
+  return (
+    <StyledNav>
       <MobileNav>
-        <button> hi </button>
+        <button
+          onClick={() => {
+            const current = expand
+            setExpand(!current)
+          }}
+        >
+          {" "}
+          hi{" "}
+        </button>
       </MobileNav>
-      <NavItem>
-        <NavLink
-          activeClass="activeLink"
-          to="app"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          Appetizer
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          to="pho"
-          activeClass="activeLink"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          Pho
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          to="spec"
-          activeClass="activeLink"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          House Special
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          to="rice"
-          activeClass="activeLink"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          Rice
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          to="vermi"
-          activeClass="activeLink"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          Vermicelli
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          to="kid"
-          activeClass="activeLink"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          Kid
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          to="drink"
-          activeClass="activeLink"
-          smooth={true}
-          offset={-50}
-          spy={true}
-        >
-          Beverages
-        </NavLink>
-      </NavItem>
-    </NavList>
-  </StyledNav>
-)
+      <NavList expand={expand}>
+        <NavItem>
+          <NavLink
+            activeClass="activeLink"
+            to="app"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            Appetizer
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            to="pho"
+            activeClass="activeLink"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            Pho
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            to="spec"
+            activeClass="activeLink"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            House Special
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            to="rice"
+            activeClass="activeLink"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            Rice
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            to="vermi"
+            activeClass="activeLink"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            Vermicelli
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            to="kid"
+            activeClass="activeLink"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            Kid
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            to="drink"
+            activeClass="activeLink"
+            smooth={true}
+            offset={-50}
+            spy={true}
+          >
+            Beverages
+          </NavLink>
+        </NavItem>
+      </NavList>
+    </StyledNav>
+  )
+}
 
 export default NavBar
