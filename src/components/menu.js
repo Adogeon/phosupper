@@ -17,19 +17,17 @@ const CatTitle = styled.h2({
 
 const ItemDiv = styled.div({
   border: "1px solid gray",
-  width: "90%",
+  width: "45%",
   borderRadius: "15px",
   display: "flex",
   flexFlow: "column",
-  padding: "1em 1em",
-  margin: "1em 0",
+  padding: "0.5em 0.25em",
+  margin: "1em 0.2em",
   "@media (min-width:426px)": {
-    width: "45%",
-    margin: "2em 0.125em",
+    width: "30%",
   },
   "@media (min-width:570px)": {
-    width: "40%",
-    margin: "2em 2em",
+    width: "25%",
   },
 })
 
