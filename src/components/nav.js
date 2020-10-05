@@ -21,7 +21,7 @@ const NavList = styled.ul(props => ({
   overflow: "hidden",
   height: props.expand ? "calc(43px * 7)" : "43px",
   transition: "height 800ms",
-  "@media (min-width:426px)": {
+  "@media (min-width:764px)": {
     display: "flex",
     flexFlow: "row nowrap",
     visibility: "visible",
@@ -33,7 +33,7 @@ const MobileNav = styled.div({
   width: "20vw",
   position: "relative",
   top: "0px",
-  "@media (min-width:426px)": {
+  "@media (min-width:764px)": {
     display: "none",
   },
 })

@@ -64,8 +64,8 @@ const Menu = () => {
               .map((item, index) => (
                 <ItemDiv key={index}>
                   <ItemTitle>{item.name}</ItemTitle>
-                  <ItemDesc></ItemDesc>
-                  <Image />
+                  <ItemDesc>{item.desc}</ItemDesc>
+                  <Image path={item.ImagePath} />
                   <ItemPrice>{item.price}</ItemPrice>
                 </ItemDiv>
               ))}

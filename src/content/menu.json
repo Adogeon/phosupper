@@ -103,7 +103,7 @@
       "name": "Fresh Shrimp Spring Roll (2)",
       "price": "$5.99",
       "hasChoice": false,
-      "ImagePath": null
+      "ImagePath": "gatsby-icon.png"
     },
     {
       "id": "000002",
