@@ -72,14 +72,14 @@ const StandardCat = ({ category }) => (
         .map((item, index) => (
           <ItemDiv key={index}>
             <ItemTitle>{item.name}</ItemTitle>
+            <Image path={item.ImagePath} />
+            <ItemPrice>{item.price}</ItemPrice>
             <ItemDesc>{item.desc && splitNewLines(item.desc).map(line=>{
               return <p>{line}</p>
             })}</ItemDesc>
             {item.hasChoice && <ItemChoice>{
                 item.choices && item.choices.map(choice => <li>{choice}</li>)
               }</ItemChoice>}
-            <Image path={item.ImagePath} />
-            <ItemPrice>{item.price}</ItemPrice>
           </ItemDiv>
         ))}
     </div>

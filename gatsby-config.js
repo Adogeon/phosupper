@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/phosupper",
   siteMetadata: {
-    title: `Pho SupperBowl Menu`,
+    title: `Pho SuperBowl El Cajon`,
     description: `Currently prototype for Pho Superbowl menu.`,
     author: `Anh Dao`,
   },

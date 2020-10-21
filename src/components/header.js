@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          Pho SuperBowl El Cajon
+          {siteTitle}
         </Link>
       </h1>
     </div>
