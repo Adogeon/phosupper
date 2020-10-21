@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 import { Link as ScrollLink } from "react-scroll"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEllipsisH } from "@fortawesome/free-solid-svg-icons"
 
 const StyledNav = styled.nav({
   position: "sticky",
@@ -9,11 +11,12 @@ const StyledNav = styled.nav({
   zIndex: "1",
   display: "flex",
   flexFlow: "row-reverse nowrap",
+  alignItems: "flex-start",
+  boxShadow: "0 4px 3px -3px black",
 })
 
 const NavList = styled.ul(props => ({
   listStyle: "none",
-  borderBottom: "1px solid gray",
   justifyContent: "space-evenly",
   width: "100%",
   margin: "0.25em 0",
@@ -21,7 +24,7 @@ const NavList = styled.ul(props => ({
   overflow: "hidden",
   height: props.expand ? "calc(43px * 7)" : "43px",
   transition: "height 800ms",
-  "@media (min-width:426px)": {
+  "@media (min-width:764px)": {
     display: "flex",
     flexFlow: "row nowrap",
     visibility: "visible",
@@ -29,11 +32,13 @@ const NavList = styled.ul(props => ({
 }))
 
 const MobileNav = styled.div({
-  display: "inline-block",
-  width: "20vw",
+  display: "flex",
+  justifyContent: "center",
+  width: "10vw",
+  height: "51px",
   position: "relative",
   top: "0px",
-  "@media (min-width:426px)": {
+  "@media (min-width:764px)": {
     display: "none",
   },
 })
@@ -71,13 +76,18 @@ const NavBar = () => {
     <StyledNav>
       <MobileNav>
         <button
+          css={{
+            background: "inherit",
+            border: "0px",
+            pading: "0.5em 1em",
+            borderRadius: "100%",
+          }}
           onClick={() => {
             const current = expand
             setExpand(!current)
           }}
         >
-          {" "}
-          hi{" "}
+          <FontAwesomeIcon icon={faEllipsisH} size={"2x"} />
         </button>
       </MobileNav>
       <NavList expand={expand}>

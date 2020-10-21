@@ -96,6 +96,29 @@
       ]
     }
   ],
+  "phoTopping": [
+    {
+      "name": "Tripe",
+      "imagePath": null
+    },
+    {
+      "name": "Rare steak",
+      "imagePath": null
+    },
+    {
+      "name": "Brisket",
+      "imagePath": null
+    },
+    {
+      "name": "Tendon",
+      "imagePath": null
+    },
+    {
+      "name": "Charbroiled Meat",
+      "imagePath": null
+    }
+  ],
+
   "dish": [
     {
       "id": "000001",
@@ -104,7 +127,7 @@
       "price": "$5.99",
       "desc": "This is food",
       "hasChoice": false,
-      "ImagePath": null
+      "ImagePath": "gatsby-icon.png"
     },
     {
       "id": "000002",
