@@ -102,6 +102,7 @@
       "order": "1",
       "name": "Fresh Shrimp Spring Roll (2)",
       "price": "$5.99",
+      "desc": "This is food",
       "hasChoice": false,
       "ImagePath": null
     },
@@ -110,6 +111,7 @@
       "order": "2",
       "name": "Fresh Tofu Spring Roll (2)",
       "price": "$5.99",
+      "desc":" ALotoooofffwwwoorrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddladkfaksdjfaklsdjflaksjdflkasjdf",
       "hasChoice": false,
       "ImagePath": null
     },

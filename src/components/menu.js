@@ -40,6 +40,9 @@ const ItemTitle = styled.h4({
 
 const ItemDesc = styled.div({
   padding: "0.5em 0",
+  fontSize: "16px",
+  lineHeight:"18px",
+  height: "90px"
 })
 
 const ItemPrice = styled.div({
@@ -63,8 +66,8 @@ const Menu = () => {
               .filter(dish => category.items.includes(dish.id))
               .map((item, index) => (
                 <ItemDiv key={index}>
-                  <ItemTitle>{item.name}</ItemTitle>
-                  <ItemDesc></ItemDesc>
+                  <ItemTitle>{item.name}</ItemTitle>              
+                  <ItemDesc>{item.desc}</ItemDesc>
                   <Image />
                   <ItemPrice>{item.price}</ItemPrice>
                 </ItemDiv>
