@@ -2,6 +2,7 @@ import React from "react"
 import { CatDiv, CatTitle } from "./StandardCat"
 import Image from "../image"
 import JSONData from "../../content/menu.json"
+import { faBorderNone } from "@fortawesome/free-solid-svg-icons"
 
 const { dish, phoTopping } = JSONData
 
@@ -22,7 +23,7 @@ const PhoCat = ({ category }) => {
                 margin: "auto",
               }}
             >
-              <div>{dish.name}</div>
+              <div>{dish.name} <em css={{fontStyle: "normal", color: "#75DDDD"}}>{dish.desc}</em></div>
               <div>{dish.price}</div>
             </div>
           ))}

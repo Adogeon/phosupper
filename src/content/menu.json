@@ -99,42 +99,42 @@
   "phoTopping": [
     {
       "name": "Tripe",
-      "imagePath": null
+      "imagePath": "tripe.jpg"
     },
     {
       "name": "Rare steak",
-      "imagePath": null
+      "imagePath": "rare_steak.jpg"
     },
     {
       "name": "Brisket",
-      "imagePath": null
+      "imagePath": "brisket.jpg"
     },
     {
       "name": "Tendon",
-      "imagePath": null
+      "imagePath": "tendon.jpg"
     },
     {
-      "name": "Charbroiled Meat",
-      "imagePath": null
+      "name": "Meat Ball",
+      "imagePath": "meatball.jpg"
     }
   ],
-
   "dish": [
     {
       "id": "000001",
       "order": "1",
-      "name": "Fresh Shrimp Spring Roll (2)",
+      "name": "Fresh Spring Roll (2)",
       "price": "$5.99",
-      "desc": "This is food",
-      "hasChoice": false,
-      "ImagePath": "gatsby-icon.png"
+      "desc": "Clear rice paper wrap with vermicelli, lettuce, and your choice of meat: ",
+      "hasChoice": true,
+      "choices":["Shrimp", "Beef + 1$", "Chicken + 1$", "Pork + 1$"],
+      "ImagePath": "shrimp-spring-rolls.jpg"
     },
     {
       "id": "000002",
       "order": "2",
-      "name": "Fresh Tofu Spring Roll (2)",
+      "name": "Fresh Vegetarian Spring Roll (2)",
       "price": "$5.99",
-      "desc":" ALotoooofffwwwoorrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddladkfaksdjfaklsdjflaksjdflkasjdf",
+      "desc":"\nClear rice paper wrap with vermicelli, lettuce, and baked tofu",
       "hasChoice": false,
       "ImagePath": null
     },
@@ -143,6 +143,7 @@
       "order": "3",
       "name": "Grilled Pork Patty Rolls (3)",
       "price": "$7.80",
+      "desc": "\nClear rice paper wrap with vermicelli, lettuce, pickles, crispy roll with Pork patty",
       "hasChoice": false,
       "ImagePath": null
     },
@@ -151,7 +152,9 @@
       "order": "4",
       "name": "Crispy Vietnamese Egg Rolls(5)",
       "price": "$7.75",
-      "hasChoice": false,
+      "desc": "Crispy fried eggroll with filling of your choice:",
+      "hasChoice": true,
+      "choices": ["Pork", "Vegetarian"],
       "ImagePath": null
     },
     {
@@ -159,8 +162,9 @@
       "order": "5",
       "name": "Vietnamese Sandwich",
       "price": "$4.99",
+      "desc": "6 inch sandwich with pickles, cilantro, and grilled meat of your choice:",
       "hasChoice": true,
-      "choice": "Choice of beef, pork, or chicken",
+      "choices": ["Beef","Pork","Chicken"],
       "ImagePath": null
     },
     {
@@ -168,6 +172,7 @@
       "order": "",
       "name": "Chicken Wings",
       "price": "$4.99",
+      "desc": "House breaded Chicken wings with many flavors of your choice:",
       "hasChoice": true,
       "choice": "",
       "ImagePath": null
@@ -175,7 +180,8 @@
     {
       "id": "000007",
       "order": "6",
-      "name": "Special Combination",
+      "name": "Special Combination ",
+      "desc":"include Rare Steak, Brisket, Tendon, Tripe, and Meatball",
       "price": "$10.99",
       "hasChoice": false,
       "ImagePath": null
@@ -256,6 +262,7 @@
       "id": "000017",
       "order": "16",
       "name": "Charbroiled Meat ",
+      "desc": " Choice of Beef, Pork, Chicken",
       "price": "$9.99",
       "hasChoice": false,
       "ImagePath": null
@@ -265,6 +272,7 @@
       "order": "17",
       "name": "Combo Chabroiled ",
       "price": "$11.99",
+      "desc": "Include all three grilled meat: Beef, Pork, Chicken",
       "hasChoice": false,
       "ImagePath": null
     },
@@ -322,7 +330,7 @@
       "name": "Chow Mein",
       "price": "$10.99",
       "hasChoice": false,
-      "ImagePath": null
+      "ImagePath": "chowmein.jpg"
     },
     {
       "id": "000026",
@@ -402,7 +410,7 @@
       "name": "Orange Chicken ",
       "price": "$9.99",
       "hasChoice": false,
-      "ImagePath": null
+      "ImagePath": "orange_chicken.jpg"
     },
     {
       "id": "000036",

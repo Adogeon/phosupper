@@ -37,11 +37,25 @@ const ItemTitle = styled.h4({
 
 const ItemDesc = styled.div({
   padding: "0.5em 0",
+  p: {
+    margin: 0,
+    padding: 0
+  }
 })
 
 const ItemPrice = styled.div({
   padding: "0.5em 0",
 })
+
+const ItemChoice = styled.ul({
+  li: {
+    marginBottom:0,
+  }
+})
+
+const splitNewLines = (string) => {
+  return string.split(/\n/)
+}
 
 const StandardCat = ({ category }) => (
   <CatDiv id={category.id} >
@@ -58,7 +72,12 @@ const StandardCat = ({ category }) => (
         .map((item, index) => (
           <ItemDiv key={index}>
             <ItemTitle>{item.name}</ItemTitle>
-            <ItemDesc>{item.desc}</ItemDesc>
+            <ItemDesc>{item.desc && splitNewLines(item.desc).map(line=>{
+              return <p>{line}</p>
+            })}</ItemDesc>
+            {item.hasChoice && <ItemChoice>{
+                item.choices && item.choices.map(choice => <li>{choice}</li>)
+              }</ItemChoice>}
             <Image path={item.ImagePath} />
             <ItemPrice>{item.price}</ItemPrice>
           </ItemDiv>
